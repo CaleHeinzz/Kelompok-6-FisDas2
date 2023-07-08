@@ -110,6 +110,7 @@
 	font-weight: 1200;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: var(--size-5);
+
 }
 .logo .logo-name span{
 	color: var(--blue-medium);
@@ -157,8 +158,20 @@
 .navigation-list li {
 	padding: var(--size-1) var(--size-2);
 }
-.navigation-list li a {
+.navigation-list li a{
 	display: block;
+}
+.navigation-list li:nth-child(1) a{
+	color: var(--blue-medium);
+}
+.navigation-list li:nth-child(2) a{
+	color: var(--blue-medium);
+}
+.navigation-list li:nth-child(3) a{
+	color: var(--blue-medium);
+}
+.navigation-list li:nth-child(4) a{
+	color: var(--red-medium);
 }
 .artikel {
 	background-color: rgba(255,255,255,0.2);
@@ -283,9 +296,6 @@ a:hover {
 @media only screen and (min-width: 1024px) {
 	:root {
 		--container: calc(1024px - calc(var(--size-6) * 2));
-	}
-	.navbar .logo .logo-name {
-		width: 128px;
 	}
 	.menu-button {
 		display: none;
