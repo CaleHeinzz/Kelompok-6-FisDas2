@@ -1,5 +1,5 @@
 const menuButton = document.querySelector("#menu-button");
-const getStart = document.querySelector("#getStarted");
+const getStart = document.querySelector("#tom");
 const mainContent = document.querySelectorAll('.hero');
 const navLinks = document.querySelectorAll(".nav-links");
 
@@ -19,14 +19,13 @@ getStart.addEventListener("click", function() {
 	}
 	setTimeout(function () {
 		const bannerHeight = document.getElementById('hero').clientHeight;
-		const headerHeight = document.getElementsByClassName('header')[0].clientHeight;
 		window.scrollBy(0, bannerHeight)
 	},50)
 	setTimeout(() => {
 		mainContent[1].classList.add('active');
 		mainContent[0].classList.remove('active');
 		document.body.style.height = "100vh";
-	}, 1000);
+	}, 500);
 });
 
 for (let i = 0; i < navLinks.length; i++) {
