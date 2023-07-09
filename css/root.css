@@ -43,7 +43,9 @@
 	box-sizing: border-box;
 	background-color: var(--light-100);
 }
-
+*{
+	scroll-behavior: smooth;
+}
 .container {
 	width: var(--container);
 	margin-left: auto;
@@ -83,9 +85,11 @@
 }
 
 .header {
-	height: 50px;
+	height: 70px;
 	position: fixed;
 	top: 0;
+	display: flex;
+	align-items: center;
 	z-index: 1;
 	background-color: rgb(255,255,255,0);
 	width: 100vw;

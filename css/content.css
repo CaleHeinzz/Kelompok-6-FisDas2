@@ -1,0 +1,117 @@
+
+.scroll-top{
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    right:20px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--blue-medium);
+    border-radius: 20px;
+    z-index: 1;
+}
+.scroll-top:hover{
+    background-color: var(--red-medium);
+}
+
+.scroll-top i{
+    color: aliceblue;
+}
+.content{
+    position: relative;
+    background-color: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 70px var(--w-1);
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: black;
+}
+.content-title{
+    color: inherit;
+    margin: 0 0 var(--size-5) 0;
+    font-size: var(--size-6);
+    font-weight: 1200;
+}
+.small-image{
+    height: var(--w-4);
+    width: var(--w-2);
+}
+.medium-image{
+    height: var(--w-8);
+    width: var(--w-7);
+}
+.large-image{
+    height: var(--w-12);
+    width: var(--w-12);
+}
+.image1{
+    padding: var(--size-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image2{
+    padding: var(--size-4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-title{
+    font-size: var(--size-5);
+    font-weight: 900;
+    margin: var(--size-6) 0;
+}
+.text-title1{
+    font-size: var(--size-4);
+    font-weight: 600;
+    margin: var(--size-4) 0;
+}
+.text{
+    margin: 20px 0;
+    color: #444;
+    font-size: var(--size-4);
+    font-weight: 300;
+    text-align: justify;
+    hyphens: auto;
+    line-height: var(--size-5);
+}
+.text-box{
+    display: block;
+    background-color: antiquewhite;
+    width: var(--w-4);
+    height: var(--w-2);
+}
+.content .content-body .list-item{
+    list-style-type: decimal;
+    margin: var(--size-5) auto;
+    padding: 0 var(--size-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--size-4);
+}
+.materi{
+    padding: 0 var(--size-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer{
+    width: var(--w-12);
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+}
+#footer .text-footer {
+    color: #ddd;
+}

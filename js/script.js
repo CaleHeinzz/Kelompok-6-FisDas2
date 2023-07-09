@@ -54,3 +54,23 @@ mainArtikel.addEventListener("mouseout", () => {
 	mainDescription.classList.remove("show-artikel");
 	mainButton.classList.remove("show-artikel");
 });
+
+if (mainContent[1].classList.contains("active")) {
+	scrollTop.classList.add("active");
+}else {
+	scrollTop.classList.remove("active");
+}
+
+
+window.addEventListener('DOMContentLoaded', function() {
+	const hoverableElements = document.querySelectorAll('.hoverable');
+  
+	hoverableElements.forEach(function(element) {
+	  const tooltipText = element.getAttribute('data-title');
+	  const tooltip = document.createElement('span');
+	  tooltip.classList.add('tooltip-text');
+	  tooltip.textContent = tooltipText;
+  
+	  element.appendChild(tooltip);
+	});
+  });
