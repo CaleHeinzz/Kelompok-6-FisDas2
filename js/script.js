@@ -46,21 +46,6 @@ const mainTitle = document.querySelector('.main-title');
 const mainArtikel = document.querySelector('.artikel');
 const mainButton = document.querySelector('.button');
 
-mainArtikel.addEventListener("mouseover", () => {
-	mainDescription.classList.add("show-artikel");
-	mainButton.classList.add("show-artikel");
-});
-mainArtikel.addEventListener("mouseout", () => {
-	mainDescription.classList.remove("show-artikel");
-	mainButton.classList.remove("show-artikel");
-});
-
-if (mainContent[1].classList.contains("active")) {
-	scrollTop.classList.add("active");
-}else {
-	scrollTop.classList.remove("active");
-}
-
 
 window.addEventListener('DOMContentLoaded', function() {
 	const hoverableElements = document.querySelectorAll('.hoverable');
