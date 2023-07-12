@@ -30,7 +30,7 @@
 	--dark-100: #131c2e;
 	--dark-200: #2f3749;
 	--dark-300: #4c5361;
-	--blue-light: #8bb0ff;
+	--blue-light: #417cfb;
 	--blue-medium: #155df7;
 	--blue-dark: #0a3591;
 	--red-light: #ffbcbc;
@@ -111,6 +111,10 @@
 .logo .logo-name span{
 	color: var(--blue-medium);
 }
+.logo:hover {
+	cursor:default;
+	transform: scale(1.1);
+}
 .menu-button {
 	padding: var(--size-1) var(--size-2);
 	border: 2px solid var(--blue-medium);
@@ -125,9 +129,10 @@
 	color: var(--blue-medium);
 }
 .menu-button:hover {
-	background-color: var(--blue-dark);
+	background-color: var(--blue-light);
 	color: var(--light-100);
 	cursor: pointer;
+	transform: scale(1.1);
 }
 .navigation-list {
 	display: flex;
@@ -170,9 +175,12 @@
 	color: var(--blue-medium);
 }
 .navigation-list li:nth-child(4) a{
+	color: var(--blue-medium);
+}
+.navigation-list li:nth-child(5) a{
 	color: var(--red-medium);
 }
-.navigation-list li:nth-child(4) a:hover{
+.navigation-list li:nth-child(5) a:hover{
 	text-decoration: underline solid var(--red-medium) 2px;
 }
 .main-content {
@@ -277,7 +285,7 @@ a:hover {
 	cursor: pointer;
 	text-decoration: underline solid var(--blue-medium) 2px;
 	color: var(--blue-medium);
-
+	transform: scale(1.1);
 }
 .active{
 	opacity: 0;

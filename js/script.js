@@ -59,3 +59,48 @@ window.addEventListener('DOMContentLoaded', function() {
 	  element.appendChild(tooltip);
 	});
   });
+
+
+const jawaban = document.querySelector('.jawaban');
+const pembahasan = document.querySelectorAll('.pembahasan');
+const pg = document.querySelectorAll('.pg');
+const showAnswers = document.querySelector(".show-answers");
+const toggleAnswers = document.querySelector(".show-answers h3");
+pg.forEach(pgElem => {
+	const pilihan = pgElem.querySelectorAll('.pilihan');
+	let pilihanTerpilih = null;
+  
+	pilihan.forEach(pilihanElem => {
+	  pilihanElem.addEventListener('click', function() {
+		if (pilihanTerpilih === pilihanElem) {
+		  pilihanTerpilih.classList.remove('pilih');
+		  pilihanTerpilih = null;
+		} else {
+		  if (pilihanTerpilih) {
+			pilihanTerpilih.classList.remove('pilih');
+		  }
+		  pilihanElem.classList.add('pilih');
+		  pilihanTerpilih = pilihanElem;
+		}
+	  });
+	});
+  });
+  console.log(pembahasan.length);
+showAnswers.addEventListener("click",function(){
+	for (let i = 0; i < pembahasan.length; i++) {
+		pembahasan[i].classList.toggle("shows");
+	}
+	if (toggleAnswers.innerHTML == "Show"){
+		toggleAnswers.innerHTML = "Hide";
+	}else if(toggleAnswers.innerHTML == "Hide"){
+		toggleAnswers.innerHTML = "Show";
+	}
+});
+for (let i = 0; i <pg.length; i++) {
+	for (let j = 0; j < 5 ; j++) {
+		if (pg[i].children[j].classList.contains("pilih")){
+			console.log(pg[i].children[j]); 
+		}
+	}
+}
+

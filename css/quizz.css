@@ -1,0 +1,90 @@
+.quizz-content{
+    position: relative;
+    background-color: aqua;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0;
+    padding: 70px var(--w-1);
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: black;
+    gap: 20px;
+}
+.card-soal{
+    width: var(--w-11);
+    background-color: antiquewhite;
+    padding: var(--size-3) var(--size-5);
+    border-radius: 30px;
+}
+.soal{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 var(--size-5) 0 ;
+}
+.pg{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pilihan{
+    border-radius: var(--size-4);
+    padding: var(--size-2);
+    cursor: pointer;
+}
+.pilihan:hover{
+    background-color: bisque;
+    transform: scale(1.02);
+}
+.pilihan.pilih{
+    background-color: burlywood;
+}
+.pilihan span{
+    margin: 0 var(--size-2) 0 0;
+}
+.pembahasan{
+    display: none;
+    border-top: 2px solid var(--light-300);
+    margin: auto;
+    padding: var(--size-5) var(--size-4);
+}
+.jawab{
+    margin: 0 0 var(--size-4) 0;
+}
+details{
+    cursor: grab;
+}
+
+.shows{
+    display: block;
+    opacity: 0;
+    animation: shows 1s ease-in-out forwards;
+}
+
+@keyframes shows{
+    to{
+        opacity: 1;
+    }
+}
+sup{
+    font-size: var(--size-3);
+}
+.show-answers{
+    cursor: pointer;
+    background-color: var(--blue-medium);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-2);
+}
+.show-answers:hover{
+    background-color: var(--blue-light);
+    transform: scale(1.05);
+}
+.show-answers h3{
+    color: #fff;
+}
